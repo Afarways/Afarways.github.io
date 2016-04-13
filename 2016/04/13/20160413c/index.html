@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>我的第一篇博客 | Redice</title>
+  <title>C++函数返回值情况 | Redice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="愿流浪的人都有酒喝,愿孤独的人都会唱歌.">
+  <meta name="description" content="在一个函数的内部，return的时候返回的都是一个拷贝，不管是变量、对象还是指针都是返回拷贝，但是这个拷贝是浅拷贝。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客">
-<meta property="og:url" content="http://Afarways.red/2016/04/10/20160410e/index.html">
+<meta property="og:title" content="C++函数返回值情况">
+<meta property="og:url" content="http://Afarways.red/2016/04/13/20160413c/index.html">
 <meta property="og:site_name" content="Redice">
-<meta property="og:description" content="愿流浪的人都有酒喝,愿孤独的人都会唱歌.">
-<meta property="og:updated_time" content="2016-04-11T01:37:27.934Z">
+<meta property="og:description" content="在一个函数的内部，return的时候返回的都是一个拷贝，不管是变量、对象还是指针都是返回拷贝，但是这个拷贝是浅拷贝。">
+<meta property="og:updated_time" content="2016-04-13T04:08:13.545Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客">
-<meta name="twitter:description" content="愿流浪的人都有酒喝,愿孤独的人都会唱歌.">
+<meta name="twitter:title" content="C++函数返回值情况">
+<meta name="twitter:description" content="在一个函数的内部，return的时候返回的都是一个拷贝，不管是变量、对象还是指针都是返回拷贝，但是这个拷贝是浅拷贝。">
   
     <link rel="alternative" href="/atom.xml" title="Redice" type="application/atom+xml">
   
@@ -238,11 +238,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-20160410e" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-20160413c" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/10/20160410e/" class="article-date">
-      <time datetime="2016-04-09T17:19:51.000Z" itemprop="datePublished">2016-04-10</time>
+      <a href="/2016/04/13/20160413c/" class="article-date">
+      <time datetime="2016-04-13T03:25:36.000Z" itemprop="datePublished">2016-04-13</time>
 </a>
     </div>
   
@@ -255,7 +255,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客
+      C++函数返回值情况
     </h1>
   
 
@@ -264,13 +264,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Essay/">Essay</a>
+    <a class="article-category-link" href="/categories/Communicate/">Communicate</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-知识点总结/">C++知识点总结</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -280,11 +280,16 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><strong>愿流浪的人都有酒喝,愿孤独的人都会唱歌.</strong><br><a id="more"></a></p>
-<h3 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h3><p>终于把自己的Blog弄的像那么一回事了,这样蛮好的,至少自己有动力去完成某件事,希望自己能坚持下去.</p>
-<h3 id="愿流浪的人都有酒喝-愿孤独的人都会唱歌"><a href="#愿流浪的人都有酒喝-愿孤独的人都会唱歌" class="headerlink" title="愿流浪的人都有酒喝,愿孤独的人都会唱歌."></a>愿流浪的人都有酒喝,愿孤独的人都会唱歌.</h3><p>祝愿尘世中每一个流浪或孤独的人,都能有一个美好的未来以及结局.</p>
-<h3 id="生活不仅是眼前的苟且-还有诗和远方的田野"><a href="#生活不仅是眼前的苟且-还有诗和远方的田野" class="headerlink" title="生活不仅是眼前的苟且,还有诗和远方的田野."></a>生活不仅是眼前的苟且,还有诗和远方的田野.</h3><p>为了诗和远方,继续加油.</p>
-
+        <p><strong>在一个函数的内部，return的时候返回的都是一个拷贝，不管是变量、对象还是指针都是返回拷贝，但是这个拷贝是浅拷贝。</strong><br><a id="more"></a></p>
+<h3 id="返回值是基本类型"><a href="#返回值是基本类型" class="headerlink" title="返回值是基本类型"></a>返回值是基本类型</h3><p>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a = 100;</span><br><span class="line">retutn 100;</span><br></pre></td></tr></table></figure></p>
+<p>那么就会返回a的一个拷贝，即100返回，然后a就被销毁了。尽管a被销毁了，但它的副本5还是成功地返回了，所以这样做没有问题。</p>
+<h3 id="返回值非动态分配-new-malloc-得到的指针"><a href="#返回值非动态分配-new-malloc-得到的指针" class="headerlink" title="返回值非动态分配(new/malloc)得到的指针"></a>返回值非动态分配(new/malloc)得到的指针</h3><p>对于非动态分配(new/malloc)得到的指针，像1那么做就会有问题，比如在某个函数内部：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a[] = &#123;1, 2&#125;;</span><br><span class="line"><span class="built_in">return</span> a;</span><br></pre></td></tr></table></figure></p>
+<p>那么也会返回指针a的一个拷贝，我们假定a的地址值为0x002345FC，那么这个0x2345FC是能够成功返回的。当return执行完成后，a就要被销毁，也就是0x002345FC所指向的内存被回收了。如果这时候在函数外面，去地址0x002345FC取值，那得到的结果肯定是不对的。这就是为什么不能返回局部指针的原因。返回局部变量的引用的道理和这个类似。</p>
+<h3 id="返回-动态分配得到的-指针的另外一种情况"><a href="#返回-动态分配得到的-指针的另外一种情况" class="headerlink" title="返回(动态分配得到的)指针的另外一种情况"></a>返回(动态分配得到的)指针的另外一种情况</h3><p>对于返回(动态分配得到的)指针的另外一种情况，比如在函数内部：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a = new int(5);</span><br><span class="line"><span class="built_in">return</span> a;</span><br></pre></td></tr></table></figure></p>
+<p>这样做是可以的。return a执行完后，a并没有被销毁(必须要用delete才能销毁a)，所以这里返回的a是有效的。</p>
+<h3 id="返回值不是基本数据类型"><a href="#返回值不是基本数据类型" class="headerlink" title="返回值不是基本数据类型"></a>返回值不是基本数据类型</h3><p> 如果不是基本数据类型，比如：<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class A</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">       OtherClass * ...</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p> 这时候也会返回a的一个拷贝，如果A没有写深拷贝构造函数，就会调用缺省的拷贝构造函数(浅拷贝)，这样做就会失败的；<br>如果A中提供了深拷贝构造函数，则这样做就是可以的。</p>
+<h6 id="本文总结来源于网络-玄机逸士的博客"><a href="#本文总结来源于网络-玄机逸士的博客" class="headerlink" title="本文总结来源于网络 玄机逸士的博客"></a>本文总结来源于网络 玄机逸士的博客</h6>
       
     </div>
     
@@ -292,13 +297,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/04/10/20160410e/">我的第一篇博客</a></p>
+        <p><span>本文标题:</span><a href="/2016/04/13/20160413c/">C++函数返回值情况</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Afarways 的个人博客">Afarways</a></p>
-        <p><span>发布时间:</span>2016年04月10日 - 01时19分</p>
-        <p><span>最后更新:</span>2016年04月11日 - 09时37分</p>
+        <p><span>发布时间:</span>2016年04月13日 - 11时25分</p>
+        <p><span>最后更新:</span>2016年04月13日 - 12时08分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/04/10/20160410e/" title="我的第一篇博客">http://Afarways.red/2016/04/10/20160410e/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://Afarways.red/2016/04/10/20160410e/　　作者: Afarways" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/13/20160413c/" title="C++函数返回值情况">http://Afarways.red/2016/04/13/20160413c/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://Afarways.red/2016/04/13/20160413c/　　作者: Afarways" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -311,18 +316,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/04/10/20160410c2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Cocos2d-x 不规则按钮处理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/04/10/20160410c/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Android平台菜单返回键监听</div>
+    <a href="/2016/04/12/20160412e/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">每一个选择都是艰难的</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -333,7 +329,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#我的第一篇博客"><span class="toc-number">1.</span> <span class="toc-text">我的第一篇博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#愿流浪的人都有酒喝-愿孤独的人都会唱歌"><span class="toc-number">2.</span> <span class="toc-text">愿流浪的人都有酒喝,愿孤独的人都会唱歌.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生活不仅是眼前的苟且-还有诗和远方的田野"><span class="toc-number">3.</span> <span class="toc-text">生活不仅是眼前的苟且,还有诗和远方的田野.</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#返回值是基本类型"><span class="toc-number">1.</span> <span class="toc-text">返回值是基本类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#返回值非动态分配-new-malloc-得到的指针"><span class="toc-number">2.</span> <span class="toc-text">返回值非动态分配(new/malloc)得到的指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#返回-动态分配得到的-指针的另外一种情况"><span class="toc-number">3.</span> <span class="toc-text">返回(动态分配得到的)指针的另外一种情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#返回值不是基本数据类型"><span class="toc-number">4.</span> <span class="toc-text">返回值不是基本数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本文总结来源于网络-玄机逸士的博客"><span class="toc-number">4.0.0.1.</span> <span class="toc-text">本文总结来源于网络 玄机逸士的博客</span></a></li></ol></li></ol></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -395,7 +391,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/04/10/20160410e/" data-title="我的第一篇博客" data-url="http://Afarways.red/2016/04/10/20160410e/"></div>
+    <div class="ds-thread" data-thread-key="2016/04/13/20160413c/" data-title="C++函数返回值情况" data-url="http://Afarways.red/2016/04/13/20160413c/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -418,13 +414,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/04/10/20160410c2/" title="上一篇: Cocos2d-x 不规则按钮处理">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/04/10/20160410c/" title="下一篇: Android平台菜单返回键监听">
+            <a href="/2016/04/12/20160412e/" title="下一篇: 每一个选择都是艰难的">
                 <i class="fa fa-angle-right"></i>
             </a>
         
