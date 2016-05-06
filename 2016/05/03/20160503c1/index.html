@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>JavaScript基础知识点总结 | Redice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="JavaScript 一些知识点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript基础知识点总结">
+<meta property="og:url" content="http://Afarways.red/2016/05/03/20160503c1/index.html">
+<meta property="og:site_name" content="Redice">
+<meta property="og:description" content="JavaScript 一些知识点">
+<meta property="og:updated_time" content="2016-05-06T07:22:31.689Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript基础知识点总结">
+<meta name="twitter:description" content="JavaScript 一些知识点">
+  
+    <link rel="alternative" href="/atom.xml" title="Redice" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">Afarways</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">愿流浪的人都有酒喝,愿孤独的人都会唱歌.</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/archives">文章列表</a></li>
+                        
+                            <li><a href="/categories/Essay">心情随笔</a></li>
+                        
+                            <li><a href="/categories/Readnotes">读书笔记</a></li>
+                        
+                            <li><a href="/categories/Communicate">技术交流</a></li>
+                        
+                            <li><a href="/categories/MessageBoard">评论留言</a></li>
+                        
+                            <li><a href="/categories/Study">学习历程</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="/404" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/Afarways/Afarways.github.io.git" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/cong-xin-suo-yu-xin-you-tian-you" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/5696906112/profile?topnav=1&wvr=6" title="weibo">weibo</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/C-知识点总结/" style="font-size: 10px;">C++知识点总结</a> <a href="/tags/Cocos2d-x/" style="font-size: 20px;">Cocos2d-x</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/随笔/" style="font-size: 15px;">随笔</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://MOxFIVE.github.io/">MOxFIVE</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.vsay.cn/">DoubleV</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ccwebsite.com/">兮兮</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.dandyweng.com/">翁天信</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.plqblog.com/views/index.php">潘利强</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.hankin.cn/">hankin技术宅</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">一只小菜鸟。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Afarways</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Afarways</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">愿流浪的人都有酒喝,愿孤独的人都会唱歌.</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/archives">文章列表</a></li>
+                
+                    <li><a href="/categories/Essay">心情随笔</a></li>
+                
+                    <li><a href="/categories/Readnotes">读书笔记</a></li>
+                
+                    <li><a href="/categories/Communicate">技术交流</a></li>
+                
+                    <li><a href="/categories/MessageBoard">评论留言</a></li>
+                
+                    <li><a href="/categories/Study">学习历程</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="/404" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/Afarways/Afarways.github.io.git" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/cong-xin-suo-yu-xin-you-tian-you" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/5696906112/profile?topnav=1&wvr=6" title="weibo">weibo</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-20160503c1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/03/20160503c1/" class="article-date">
+      <time datetime="2016-05-03T03:17:33.000Z" itemprop="datePublished">2016-05-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript基础知识点总结
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Communicate/">Communicate</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>JavaScript 一些知识点</strong><br><a id="more"></a></p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h4 id="原始数据类型"><a href="#原始数据类型" class="headerlink" title="原始数据类型"></a>原始数据类型</h4><p>弱类型特征</p>
+<ul>
+<li><em>number</em></li>
+<li><em>string</em></li>
+<li><em>boolean</em></li>
+<li><em>null</em></li>
+<li><em>undefined</em></li>
+</ul>
+<h4 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h4><ul>
+<li><em>Function</em></li>
+<li><em>Array</em></li>
+<li><em>Date</em></li>
+<li><em>…</em></li>
+</ul>
+<h4 id="隐式转化"><a href="#隐式转化" class="headerlink" title="隐式转化"></a>隐式转化</h4><ul>
+<li><em>‘+’</em>  字符串拼接</li>
+</ul>
+<h4 id="包装类型"><a href="#包装类型" class="headerlink" title="包装类型"></a>包装类型</h4><p><em>当基本数据类型以对象的形式访问的时候，会产生一个临时的包装对象，在访问结束以后会销毁</em><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var str = <span class="string">"string"</span>;</span><br><span class="line">str.length; //有效 值为6</span><br><span class="line">str.b = 3;</span><br><span class="line">str.b;      //undefined 访问结束后 对象被销毁了</span><br></pre></td></tr></table></figure></p>
+<h4 id="类型检测"><a href="#类型检测" class="headerlink" title="类型检测"></a>类型检测</h4><ul>
+<li><p><em>typeof</em>  //函数对象和基本数据类型的判断</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="string">"function"</span></span><br><span class="line">null <span class="string">"object"</span></span><br><span class="line">undefined <span class="string">"undefined"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>instanceof</em>    //适用于对象 在不同iframe和window间检测时失效</p>
+</li>
+<li><em>Object.prototype.toString()</em>   //内置对象和基元类型</li>
+<li><em>constructor</em>  //</li>
+<li><em>duck type</em>  //</li>
+</ul>
+<h4 id="block"><a href="#block" class="headerlink" title="block"></a><em>block</em></h4><p>没有块级作用域</p>
+<h4 id="严格模式"><a href="#严格模式" class="headerlink" title="严格模式"></a>严格模式</h4><h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;use strict&apos;</span><br></pre></td></tr></table></figure>
+<h5 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h5><ul>
+<li><em>不允许未声明变量赋值</em></li>
+<li><em>arguments变为参数的静态副本</em></li>
+<li><em>delete参数、函数名报错</em></li>
+<li><em>delete不可配置的属性报错</em></li>
+<li><em>对象字面量重复属性名报错</em></li>
+<li><em>禁止八进制字面量</em></li>
+<li><em>eval ，arguments变为关键字</em></li>
+<li><em>eval独立作用域</em></li>
+<li><em>不允许使用with</em></li>
+<li><em>一般函数调用时(不是对象方法的调用，也不使用apply/call/bind等修改this)this指向null,而不是全局对象</em></li>
+<li><em>如使用apply/call，当传入null或者undefined时，this将指向null或者undefined而不是全局对象</em></li>
+<li><em>试图修改不可写属性(writable == false),报错而不是忽略</em></li>
+<li><em>argument.caller,arguments.callee禁用</em></li>
+</ul>
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><p>大小范围：2^23-1</p>
+<ul>
+<li><p><em>创建数组</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">字面量：</span><br><span class="line">var students = [&#123;name: <span class="string">'Bosn'</span>,age : 27&#125;,&#123;name : <span class="string">'Nunnly'</span>, age:3&#125;]</span><br><span class="line">值得注意的地方 var arr1 = [,,];//表示两个未定义的变量</span><br><span class="line">new Array():</span><br><span class="line">var arr = new Array(100);</span><br><span class="line">var arr = new Array(1,2,3);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>数组操作</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">头部操作：</span><br><span class="line">unshift();//头部插入</span><br><span class="line"><span class="built_in">shift</span>();//头部删除</span><br><span class="line">尾部操作：</span><br><span class="line">push(); //尾部插入</span><br><span class="line">pop();  //尾部删除</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>数组迭代</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i <span class="keyword">in</span> arr)&#123;&#125;</span><br><span class="line"><span class="keyword">for</span>(i = 0; i &lt; arr.length;i++)</span><br><span class="line">arr[i];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>数组方法</em><br>ES5 = IE9及其以上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#125; =&gt; Object.prototype;</span><br><span class="line">[] =&gt; Array.prototype;</span><br><span class="line">Array.prototype.join(); //将数组转化成字符串</span><br><span class="line">Array.prototype.reverse();//将数组逆序</span><br><span class="line">Array.prototype.sort(); //排序</span><br><span class="line">Array.prototype.concat(); //数组合并</span><br><span class="line">Array.prototype.slice(); //返回部分数组 -4 表示倒数第几个元素</span><br><span class="line">Array.prototype.splice(); //数组拼接</span><br><span class="line">Array.prototype.forEach(ES5); //遍历数组</span><br><span class="line">Array.prototype.map(ES5);     //数组映射 不修改原数组</span><br><span class="line">Array.prototype.filter(ES5);  //数组过滤</span><br><span class="line">Array.prototype.every(ES5);   //每一个元素都要满足一定的条件</span><br><span class="line">Array.prototype.some(ES5);    //某一个元素满足一定的条件</span><br><span class="line">Array.prototype.reduce/reduceRight(ES5); //可以求和或者找最大最小值</span><br><span class="line">Array.prototype.indexOf/lastIndexOf(ES5); //数组检索</span><br><span class="line">Array.isArray(ES5);</span><br><span class="line">Array.prototype.join.call(str,<span class="string">"-"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="JavaScript-创建对象的七种模式"><a href="#JavaScript-创建对象的七种模式" class="headerlink" title="JavaScript 创建对象的七种模式"></a>JavaScript 创建对象的七种模式</h4><ul>
+<li><p><em>工厂模式</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">这种模式抽象了创建具体对象的过程</span><br><span class="line">考虑到在 ECMAScript 中无法创建类，开发人员就发明了一种函数，用函数来封装以特定接口创建对象的细节</span><br><span class="line"><span class="keyword">function</span> createPerson(name, age, job)&#123;</span><br><span class="line">var o = new Object();</span><br><span class="line">o.name = name;</span><br><span class="line">	o.age = age;</span><br><span class="line">	o.job = job;</span><br><span class="line">	o.sayName = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="built_in">return</span> o;</span><br><span class="line">&#125;</span><br><span class="line">var person1 = createPerson(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">var person2 = createPerson(<span class="string">"Greg"</span>, 27, <span class="string">"Doctor"</span>);</span><br><span class="line">函数 createPerson() 能够根据接受的参数来构建一个包含所有必要信息的 Person 对象。</span><br><span class="line">可以无数次地调用这个函数，而每次它都会返回一个包含三个属性一个方法的对象。</span><br><span class="line">工厂模式虽然解决了创建多个相似对象的问题，但却没有解决对象识别的问题（即怎样知道一个对象的类型）。</span><br><span class="line">随着 JavaScript的发展，又一个新模式出现了。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>构造函数模式</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">ECMAScript 中的构造函数可用来创建特定类型的对象，例如Object 和 Array 这样的原生构造函数</span><br><span class="line"><span class="keyword">function</span> Person(name, age, job)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.job = job;</span><br><span class="line">	this.sayName = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br><span class="line">var person1 = new Person(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">var person2 = new Person(<span class="string">"Greg"</span>, 27, <span class="string">"Doctor"</span>);</span><br><span class="line">在这个例子中， Person() 函数取代了 createPerson() 函数。</span><br><span class="line">我们注意到， Person() 中的代码除了与 createPerson() 中相同的部分外，还存在以下不同之处：</span><br><span class="line">  没有显式地创建对象；</span><br><span class="line">  直接将属性和方法赋给了 this 对象；</span><br><span class="line">  没有 <span class="built_in">return</span> 语句。</span><br><span class="line">要创建 Person 的新实例，必须使用 new 操作符。以这种方式调用构造函数实际上会经历以下 4个步骤：</span><br><span class="line">(1) 创建一个新对象；</span><br><span class="line">(2) 将构造函数的作用域赋给新对象（因此 this 就指向了这个新对象） ；</span><br><span class="line">(3) 执行构造函数中的代码（为这个新对象添加属性） ；</span><br><span class="line">(4) 返回新对象。</span><br><span class="line">在前面例子的最后， person1 和 person2 分别保存着 Person 的一个不同的实例。这两个对象都有一个 constructor （构造函数）属性，该属性指向 Person ，如下所示。</span><br><span class="line">alert(person1.constructor == Person); //<span class="literal">true</span></span><br><span class="line">alert(person2.constructor == Person); //<span class="literal">true</span></span><br><span class="line">但是，提到检测对象类型，还是 instan-</span><br><span class="line">ceof 操作符要更可靠一些。 我们在这个例子中创建的所有对象既是 Object 的实例， 同时也是 Person的实例，这一点通过 instanceof 操作符可以得到验证。</span><br><span class="line">alert(person1 instanceof Object); //<span class="literal">true</span></span><br><span class="line">alert(person1 instanceof Person); //<span class="literal">true</span></span><br><span class="line">alert(person2 instanceof Object); //<span class="literal">true</span></span><br><span class="line">alert(person2 instanceof Person); //<span class="literal">true</span></span><br><span class="line">构造函数的问题</span><br><span class="line">使用构造函数的主要问题，就是每个方法都要在每个实例上重新创建一遍</span><br><span class="line">person1 和 person2 都有一个名为 sayName() 的方法，但那两个方法不是同一个 Function 的实例</span><br><span class="line"><span class="keyword">function</span> Person(name, age, job)&#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">    this.age = age;</span><br><span class="line">    this.job = job;</span><br><span class="line">    this.sayName = new Function(<span class="string">"alert(this.name)"</span>); //  与声明函数在逻辑上是等价的</span><br><span class="line">&#125;</span><br><span class="line">以下代码可以证明这一点。</span><br><span class="line">alert(person1.sayName == person2.sayName); //<span class="literal">false</span></span><br><span class="line">因此，大可像下面这样，通过把函数定义转移到构造函数外部来解决这个问题。</span><br><span class="line"><span class="keyword">function</span> Person(name, age, job)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.job = job;</span><br><span class="line">	this.sayName = sayName;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">sayName</span></span>()&#123;</span><br><span class="line">	alert(this.name);</span><br><span class="line">&#125;</span><br><span class="line">var person1 = new Person(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">var person2 = new Person(<span class="string">"Greg"</span>, 27, <span class="string">"Doctor"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>原型模式</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">我们创建的每个函数都有一个 prototype （原型）属性，这个属性是一个指针，指向一个对象，而这个对象的用途是包含可以由特定类型的所有实例共享的属性和方法。</span><br><span class="line">如果按照字面意思来理解，那么 prototype 就是通过调用构造函数而创建的那个对象实例的原型对象。</span><br><span class="line">使用原型对象的好处是可以让所有对象实例共享它所包含的属性和方法。</span><br><span class="line">换句话说，不必在构造函数中定义对象实例的信息，而是可以将这些信息直接添加到原型对象中。</span><br><span class="line">但与构造函数模式不同的是，新对象的这些属性和方法是由所有实例共享的。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>组合使用构造函数模式和原型模式</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">创建自定义类型的最常见方式，就是组合使用构造函数模式与原型模式。</span><br><span class="line">构造函数模式用于定义实例属性，而原型模式用于定义方法和共享的属性。</span><br><span class="line">结果，每个实例都会有自己的一份实例属性的副本，但同时又共享着对方法的引用，最大限度地节省了内存。</span><br><span class="line">另外，这种混成模式还支持向构造函数传递参数；可谓是集两种模式之长。</span><br><span class="line"><span class="keyword">function</span> Person(name, age, job)&#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">    this.age = age;</span><br><span class="line">    this.job = job;</span><br><span class="line">    this.friends = [<span class="string">"Shelby"</span>, <span class="string">"Court"</span>];</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype = &#123;</span><br><span class="line">constructor : Person,</span><br><span class="line">sayName : <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">alert(this.name);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">var person1 = new Person(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">var person2 = new Person(<span class="string">"Greg"</span>, 27, <span class="string">"Doctor"</span>);</span><br><span class="line">person1.friends.push(<span class="string">"Van"</span>);</span><br><span class="line">alert(person1.friends); //<span class="string">"Shelby,Count,Van"</span></span><br><span class="line">alert(person2.friends); //<span class="string">"Shelby,Count"</span></span><br><span class="line">alert(person1.friends === person2.friends); //<span class="literal">false</span></span><br><span class="line">alert(person1.sayName === person2.sayName); //<span class="literal">true</span></span><br><span class="line">是目前在 ECMAScript中使用最广泛、认同度最高的一种创建自定义类型的方法</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>动态原型模式</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">动态原型模式致力于解决这样一个问题，它把所有信息都封装在了构造函数中，而通过在构造函数中初始化原型（仅在必要的情况下） ，又保持了同时使用构造函数和原型的优点。换句话说，可以通过检查某个应该存在的方法是否有效，来决定是否需要初始化原型。</span><br><span class="line"><span class="keyword">function</span> Person(name, age, job)&#123;</span><br><span class="line">	//属性</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.job = job;</span><br><span class="line">	// 方法</span><br><span class="line">	<span class="keyword">if</span> (typeof this.sayName != <span class="string">"function"</span>)&#123;</span><br><span class="line">		Person.prototype.sayName = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">			alert(this.name);</span><br><span class="line">		&#125;;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">var friend = new Person(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">friend.sayName();</span><br><span class="line">注意构造函数代码中加粗的部分。这里只在 sayName() 方法不存在的情况下，才会将它添加到原型中。</span><br><span class="line">使用动态原型模式时，不能使用对象字面量重写原型。前面已经解释过了，如果在已经创建了实例的情况下重写原型，那么就会切断现有实例与新原型之间的联系。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>寄生构造函数模式</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">通常，在前述的几种模式都不适用的情况下，可以使用寄生（parasitic）构造函数模式。这种模式的基本思想是创建一个函数，该函数的作用仅仅是封装创建对象的代码，然后再返回新创建的对象；但从表面上看，这个函数又很像是典型的构造函数。</span><br><span class="line"><span class="keyword">function</span> Person(name, age, job)&#123;</span><br><span class="line">	var o = new Object();</span><br><span class="line">	o.name = name;</span><br><span class="line">	o.age = age;</span><br><span class="line">	o.job = job;</span><br><span class="line">	o.sayName = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="built_in">return</span> o;</span><br><span class="line">&#125;</span><br><span class="line">var friend = new Person(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">friend.sayName(); //<span class="string">"Nicholas"</span></span><br><span class="line">除了使用 new 操作符并把使用的包装函数叫做构造函数之外， 这个模式跟工厂模式其实是一模一样的。</span><br><span class="line">工厂模式为</span><br><span class="line"><span class="keyword">function</span> createPerson(name, age, job)&#123;</span><br><span class="line">	var o = new Object();</span><br><span class="line">	o.name = name;</span><br><span class="line">	o.age = age;</span><br><span class="line">	o.job = job;</span><br><span class="line">	o.sayName = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="built_in">return</span> o;</span><br><span class="line">&#125;</span><br><span class="line">var person1 = createPerson(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">var person2 = createPerson(<span class="string">"Greg"</span>, 27, <span class="string">"Doctor"</span>);</span><br><span class="line">关于寄生构造函数模式，有一点需要说明：首先，返回的对象与构造函数或者与构造函数的原型属性之间没有关系；也就是说，构造函数返回的对象与在构造函数外部创建的对象没有什么不同。为此，不能依赖 instanceof 操作符来确定对象类型。 由于存在上述问题， 我们建议在可以使用其他模式的情况下，不要使用这种模式。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>稳妥构造函数模式</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">所谓稳妥对象，指的是没有公共属性，而且其方法也不引用 this 的对象。</span><br><span class="line">稳妥对象最适合在一些安全的环境中 （这些环境中会禁止使用 this 和 new ） ， 或者在防止数据被其他应用程序 （如 Mashup程序）改动时使用。</span><br><span class="line">稳妥构造函数遵循与寄生构造函数类似的模式，但有两点不同：</span><br><span class="line">一是新创建对象的实例方法不引用 this ；</span><br><span class="line">二是不使用 new 操作符调用构造函数。按照稳妥构造函数的要求，可以将前面的 Person 构造函数重写如下。</span><br><span class="line"><span class="keyword">function</span> Person(name, age, job)&#123;</span><br><span class="line">	//创建要返回的对象</span><br><span class="line">	var o = new Object();</span><br><span class="line">	//可以在这里定义私有变量和函数</span><br><span class="line">	//添加方法</span><br><span class="line">	o.sayName = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		alert(name);</span><br><span class="line">	&#125;;</span><br><span class="line">	//返回对象</span><br><span class="line">	<span class="built_in">return</span> o;</span><br><span class="line">&#125;</span><br><span class="line">var friend = Person(<span class="string">"Nicholas"</span>, 29, <span class="string">"Software Engineer"</span>);</span><br><span class="line">friend.sayName(); //<span class="string">"Nicholas"</span></span><br><span class="line">注意， 在以这种模式创建的对象中， 除了使用 sayName() 方法之外， 没有其他办法访问 name 的值。</span><br><span class="line">与寄生构造函数模式类似， 使用稳妥构造函数模式创建的对象与构造函数之间也没有什么关系，因此 instanceof 操作符对这种对象也没有意义。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/05/03/20160503c1/">JavaScript基础知识点总结</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Afarways 的个人博客">Afarways</a></p>
+        <p><span>发布时间:</span>2016年05月03日 - 11时17分</p>
+        <p><span>最后更新:</span>2016年05月06日 - 15时22分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/03/20160503c1/" title="JavaScript基础知识点总结">http://Afarways.red/2016/05/03/20160503c1/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://Afarways.red/2016/05/03/20160503c1/　　作者: Afarways" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/28/20160428e/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">听起来很有感觉的民谣其一：成都</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据类型"><span class="toc-number">1.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#原始数据类型"><span class="toc-number">1.0.1.</span> <span class="toc-text">原始数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对象类型"><span class="toc-number">1.0.2.</span> <span class="toc-text">对象类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#隐式转化"><span class="toc-number">1.0.3.</span> <span class="toc-text">隐式转化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#包装类型"><span class="toc-number">1.0.4.</span> <span class="toc-text">包装类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#类型检测"><span class="toc-number">1.0.5.</span> <span class="toc-text">类型检测</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#block"><span class="toc-number">1.0.6.</span> <span class="toc-text">block</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#严格模式"><span class="toc-number">1.0.7.</span> <span class="toc-text">严格模式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#语法"><span class="toc-number">1.0.7.1.</span> <span class="toc-text">语法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#区别"><span class="toc-number">1.0.7.2.</span> <span class="toc-text">区别</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组"><span class="toc-number">1.0.8.</span> <span class="toc-text">数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JavaScript-创建对象的七种模式"><span class="toc-number">1.0.9.</span> <span class="toc-text">JavaScript 创建对象的七种模式</span></a></li></ol></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/05/03/20160503c1/" data-title="JavaScript基础知识点总结" data-url="http://Afarways.red/2016/05/03/20160503c1/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"luums"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/04/28/20160428e/" title="下一篇: 听起来很有感觉的民谣其一：成都">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/03/20160503c1/">JavaScript基础知识点总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/28/20160428e/">听起来很有感觉的民谣其一：成都</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/20/20160420c/">Cocos在Win32平台调试时 无法播放.ogg格式的音乐的解决办法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/13/20160413c/">C++函数返回值情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/20160412e/">每一个选择都是艰难的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/10/20160410e/">我的第一篇博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/10/20160410c2/">Cocos2d-x 不规则按钮处理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/10/20160410c/">Android平台菜单返回键监听</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/10/20160410c1/">Cocos2d-x 自动添加MK</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Afarways
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 1;
+            var backgroundimg = "url(/background/bg-" + backgroundnum +".jpg)";
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+  </div>
+</body>
+</html>
