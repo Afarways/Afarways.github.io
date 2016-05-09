@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>听起来很有感觉的民谣其一：成都 | Redice</title>
+  <title>JavaScript高质量代码规范 | Redice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一首关于成都的歌">
+  <meta name="description" content="JavaScript 一些代码规范">
 <meta property="og:type" content="article">
-<meta property="og:title" content="听起来很有感觉的民谣其一：成都">
-<meta property="og:url" content="http://Afarways.red/2016/04/28/20160428e/index.html">
+<meta property="og:title" content="JavaScript高质量代码规范">
+<meta property="og:url" content="http://Afarways.red/2016/05/09/20160509c1/index.html">
 <meta property="og:site_name" content="Redice">
-<meta property="og:description" content="一首关于成都的歌">
-<meta property="og:updated_time" content="2016-04-28T05:53:57.553Z">
+<meta property="og:description" content="JavaScript 一些代码规范">
+<meta property="og:updated_time" content="2016-05-09T06:37:18.304Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="听起来很有感觉的民谣其一：成都">
-<meta name="twitter:description" content="一首关于成都的歌">
+<meta name="twitter:title" content="JavaScript高质量代码规范">
+<meta name="twitter:description" content="JavaScript 一些代码规范">
   
     <link rel="alternative" href="/atom.xml" title="Redice" type="application/atom+xml">
   
@@ -238,11 +238,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-20160428e" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-20160509c1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/28/20160428e/" class="article-date">
-      <time datetime="2016-04-28T05:39:30.000Z" itemprop="datePublished">2016-04-28</time>
+      <a href="/2016/05/09/20160509c1/" class="article-date">
+      <time datetime="2016-05-09T05:46:30.000Z" itemprop="datePublished">2016-05-09</time>
 </a>
     </div>
   
@@ -255,7 +255,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      听起来很有感觉的民谣其一：成都
+      JavaScript高质量代码规范
     </h1>
   
 
@@ -264,13 +264,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Essay/">Essay</a>
+    <a class="article-category-link" href="/categories/Communicate/">Communicate</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -280,11 +280,24 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><strong>一首关于成都的歌</strong><br><a id="more"></a></p>
-<h3 id="成都"><a href="#成都" class="headerlink" title="成都"></a>成都</h3><p>让我掉下眼泪的不只昨夜的酒<br>让我依依不舍的不只你的温柔<br>雨路还要走多久 你攥着我的手<br>让我感到为难的 是挣扎的自由<br>分别总是在九月 回忆是思念的愁<br>深秋嫩绿的垂柳 亲吻着我额头<br>在那座阴雨的小城里 我从未忘记你<br>成都 带不走的只有你<br>和我在成都的街头走一走 直到所有的灯都熄灭了 也不停留<br>你挽着我的衣袖<br>我会把手揣进裤兜<br>走到玉林路的尽头 坐在小酒吧的门口</p>
-<p>分别总是在九月 回忆是思念的酒<br>深秋嫩绿的垂柳 亲吻着我额头<br>在那座艳遇的小城里 我从未忘记你<br>成都 带不走的只有你<br>和我在成都的街头走一走<br>直到所有的灯都熄灭了 也不停留</p>
-<p>你挽着我的衣袖<br>我会把手揣进裤兜<br>走过玉林路的尽头 走到小酒吧的门口<br>和我在成都的街头走一走 直到所有的灯都熄灭了 也不停留<br>和我在成都的街头走一走 直到所有的灯都熄灭了 也不停留<br>你会挽着我的衣袖 我会把手揣进裤兜<br>走过玉林路的尽头 坐在小酒吧的门口</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=30260031&auto=1&height=66"><br></iframe>
+        <p><strong>JavaScript 一些代码规范</strong><br><a id="more"></a></p>
+<h4 id="单var形式（Single-var-Pattern）"><a href="#单var形式（Single-var-Pattern）" class="headerlink" title="单var形式（Single var Pattern）"></a>单var形式（Single var Pattern）</h4><p>在函数顶部使用单var语句是比较有用的一种形式，其好处在于：</p>
+<ul>
+<li>提供了一个单一的地方去寻找功能所需要的所有局部变量</li>
+<li>防止变量在定义之前使用的逻辑错误</li>
+<li>帮助你记住声明的全局变量，因此较少了全局变量</li>
+<li>少代码（类型啊传值啊单线完成）<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">func</span></span>() &#123;</span><br><span class="line">   var a = 1,</span><br><span class="line">       b = 2,</span><br><span class="line">       sum = a + b,</span><br><span class="line">       myobject = &#123;&#125;,</span><br><span class="line">       i,</span><br><span class="line">       j;</span><br><span class="line">   // <span class="keyword">function</span> body...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>您可以使用一个var语句声明多个变量，并以逗号分隔。像这种初始化变量同时初始化值的做法是很好的。这样子可以防止逻辑错误（所有未初始化但声明的变量的初始值是undefined）和增加代码的可读性。在你看到代码后，你可以根据初始化的值知道这些变量大致的用途，例如是要当作对象呢还是当作整数来使。<br>你也可以在声明的时候做一些实际的工作，例如前面代码中的sum = a + b这个情况，另外一个例子就是当你使用DOM（文档对象模型）引用时，你可以使用单一的var把DOM引用一起指定为局部变量，就如下面代码所示的：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">updateElement</span></span>() &#123;</span><br><span class="line">   var el = document.getElementById(<span class="string">"result"</span>),</span><br><span class="line">       style = el.style;</span><br><span class="line">   // 使用el和style干点其他什么事...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="for循环-for-Loops"><a href="#for循环-for-Loops" class="headerlink" title="for循环(for Loops)"></a>for循环(for Loops)</h4><p>比较好的方式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">looper</span></span>() &#123;</span><br><span class="line">   var i = 0,</span><br><span class="line">        max,</span><br><span class="line">        myarray = [];</span><br><span class="line">   // ...</span><br><span class="line">   <span class="keyword">for</span> (i = 0, max = myarray.length; i &lt; max; i++) &#123;</span><br><span class="line">      // 使用myarray[i]做点什么</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line">这种形式具有一致性的好处，因为你坚持了单一var形式。不足在于当重构代码的时候，复制和粘贴整个循环有点困难。例如，你从一个函数复制了一个循环到另一个函数，你不得不去确定你能够把i和max引入新的函数（如果在这里没有用的话，很有可能你要从原函数中把它们删掉）。</span><br><span class="line">最后一个需要对循环进行调整的是使用下面表达式之一来替换i++。</span><br></pre></td></tr></table></figure></p>
+<h4 id="避免-Avoiding-eval"><a href="#避免-Avoiding-eval" class="headerlink" title="避免(Avoiding) eval()"></a>避免(Avoiding) eval()</h4><p>如果你现在的代码中使用了eval()，记住该咒语“eval()是魔鬼”。此方法接受任意的字符串，并当作JavaScript代码来处理。当有 问题的代码是事先知道的（不是运行时确定的），没有理由使用eval()。如果代码是在运行时动态生成，有一个更好的方式不使用eval而达到同样的目 标。例如，用方括号表示法来访问动态属性会更好更简单：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 反面示例</span><br><span class="line">var property = <span class="string">"name"</span>;</span><br><span class="line">alert(<span class="built_in">eval</span>(<span class="string">"obj."</span> + property));</span><br><span class="line">// 更好的</span><br><span class="line">var property = <span class="string">"name"</span>;</span><br><span class="line">alert(obj[property]);</span><br></pre></td></tr></table></figure></p>
+<p>使用eval()也带来了安全隐患，因为被执行的代码（例如从网络来）可能已被篡改。这是个很常见的反面教材，当处理Ajax请求得到的JSON 相应的时候。在这些情况下，最好使用JavaScript内置方法来解析JSON相应，以确保安全和有效。若浏览器不支持JSON.parse()，你可 以使用来自JSON.org的库。<br>同样重要的是要记住，给setInterval(), setTimeout()和Function()构造函数传递字符串，大部分情况下，与使用eval()是类似的，因此要避免。在幕后，JavaScript仍需要评估和执行你给程序传递的字符串：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 反面示例</span><br><span class="line"><span class="built_in">set</span>Timeout(<span class="string">"myFunc()"</span>, 1000);</span><br><span class="line"><span class="built_in">set</span>Timeout(<span class="string">"myFunc(1, 2, 3)"</span>, 1000);</span><br><span class="line">// 更好的</span><br><span class="line"><span class="built_in">set</span>Timeout(myFunc, 1000);</span><br><span class="line"><span class="built_in">set</span>Timeout(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">   myFunc(1, 2, 3);</span><br><span class="line">&#125;, 1000);</span><br></pre></td></tr></table></figure></p>
+<p>使用新的Function()构造就类似于eval()，应小心接近。这可能是一个强大的构造，但往往被误用。如果你绝对必须使用eval()，你 可以考虑使用new Function()代替。有一个小的潜在好处，因为在新Function()中作代码评估是在局部函数作用域中运行，所以代码中任何被评估的通过var 定义的变量都不会自动变成全局变量。另一种方法来阻止自动全局变量是封装eval()调用到一个即时函数中。<br>考虑下面这个例子，这里仅un作为全局变量污染了命名空间。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">console.log(typeof un);    // <span class="string">"undefined"</span></span><br><span class="line">console.log(typeof deux); // <span class="string">"undefined"</span></span><br><span class="line">console.log(typeof trois); // <span class="string">"undefined"</span></span><br><span class="line">var jsstring = <span class="string">"var un = 1; console.log(un);"</span>;</span><br><span class="line"><span class="built_in">eval</span>(jsstring); // logs <span class="string">"1"</span></span><br><span class="line">jsstring = <span class="string">"var deux = 2; console.log(deux);"</span>;</span><br><span class="line">new Function(jsstring)(); // logs <span class="string">"2"</span></span><br><span class="line">jsstring = <span class="string">"var trois = 3; console.log(trois);"</span>;</span><br><span class="line">(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">   <span class="built_in">eval</span>(jsstring);</span><br><span class="line">&#125;()); // logs <span class="string">"3"</span></span><br><span class="line">console.log(typeof un); // number</span><br><span class="line">console.log(typeof deux); // <span class="string">"undefined"</span></span><br><span class="line">console.log(typeof trois); // <span class="string">"undefined"</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="parseInt-下的数值转换-Number-Conversions-with-parseInt"><a href="#parseInt-下的数值转换-Number-Conversions-with-parseInt" class="headerlink" title="parseInt()下的数值转换(Number Conversions with parseInt())"></a>parseInt()下的数值转换(Number Conversions with parseInt())</h4><p>使用parseInt()你可以从字符串中获取数值，该方法接受另一个基数参数，这经常省略，但不应该。当字符串以”0″开头的时候就有可能会出问 题，例如，部分时间进入表单域，在ECMAScript 3中，开头为”0″的字符串被当做8进制处理了，但这已在ECMAScript 5中改变了。为了避免矛盾和意外的结果，总是指定基数参数。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var month = <span class="string">"06"</span>,</span><br><span class="line">    year = <span class="string">"09"</span>;</span><br><span class="line">month = parseInt(month, 10);</span><br><span class="line">year = parseInt(year, 10);</span><br></pre></td></tr></table></figure></p>
+<p>此例中，如果你忽略了基数参数，如parseInt(year)，返回的值将是0，因为“09”被当做8进制（好比执行 parseInt( year, 8 )），而09在8进制中不是个有效数字。<br>替换方法是将字符串转换成数字，包括：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">+<span class="string">"08"</span> // 结果是 8</span><br><span class="line">Number(<span class="string">"08"</span>) // 8</span><br></pre></td></tr></table></figure></p>
+<p>这些通常快于parseInt()，因为parseInt()方法，顾名思意，不是简单地解析与转换。但是，如果你想输入例如“08 hello”，parseInt()将返回数字，而其它以NaN告终。</p>
+<h4 id="以大写字母写构造函数-Capitalizing-Constructors"><a href="#以大写字母写构造函数-Capitalizing-Constructors" class="headerlink" title="以大写字母写构造函数(Capitalizing Constructors)"></a>以大写字母写构造函数(Capitalizing Constructors)</h4><p>因为构造函数仍仅仅是函数，仅看函数名就可以帮助告诉你这应该是一个构造函数还是一个正常的函数。<br>命名构造函数时首字母大写具有暗示作用，使用小写命名的函数和方法不应该使用new调用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">MyConstructor</span></span>() &#123;...&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">myFunction</span></span>() &#123;...&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -293,13 +306,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/04/28/20160428e/">听起来很有感觉的民谣其一：成都</a></p>
+        <p><span>本文标题:</span><a href="/2016/05/09/20160509c1/">JavaScript高质量代码规范</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Afarways 的个人博客">Afarways</a></p>
-        <p><span>发布时间:</span>2016年04月28日 - 13时39分</p>
-        <p><span>最后更新:</span>2016年04月28日 - 13时53分</p>
+        <p><span>发布时间:</span>2016年05月09日 - 13时46分</p>
+        <p><span>最后更新:</span>2016年05月09日 - 14时37分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/04/28/20160428e/" title="听起来很有感觉的民谣其一：成都">http://Afarways.red/2016/04/28/20160428e/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://Afarways.red/2016/04/28/20160428e/　　作者: Afarways" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/09/20160509c1/" title="JavaScript高质量代码规范">http://Afarways.red/2016/05/09/20160509c1/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://Afarways.red/2016/05/09/20160509c1/　　作者: Afarways" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -312,18 +325,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/05/03/20160503c1/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/05/09/20160509c2/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          JavaScript基础知识点总结
+          20160509c2
         
       </div>
     </a>
   
   
-    <a href="/2016/04/20/20160420c/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Cocos在Win32平台调试时 无法播放.ogg格式的音乐的解决办法</div>
+    <a href="/2016/05/03/20160503c1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript基础知识点总结</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -334,7 +347,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#成都"><span class="toc-number">1.</span> <span class="toc-text">成都</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#单var形式（Single-var-Pattern）"><span class="toc-number">1.</span> <span class="toc-text">单var形式（Single var Pattern）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#for循环-for-Loops"><span class="toc-number">2.</span> <span class="toc-text">for循环(for Loops)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#避免-Avoiding-eval"><span class="toc-number">3.</span> <span class="toc-text">避免(Avoiding) eval()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#parseInt-下的数值转换-Number-Conversions-with-parseInt"><span class="toc-number">4.</span> <span class="toc-text">parseInt()下的数值转换(Number Conversions with parseInt())</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#以大写字母写构造函数-Capitalizing-Constructors"><span class="toc-number">5.</span> <span class="toc-text">以大写字母写构造函数(Capitalizing Constructors)</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -396,7 +409,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/04/28/20160428e/" data-title="听起来很有感觉的民谣其一：成都" data-url="http://Afarways.red/2016/04/28/20160428e/"></div>
+    <div class="ds-thread" data-thread-key="2016/05/09/20160509c1/" data-title="JavaScript高质量代码规范" data-url="http://Afarways.red/2016/05/09/20160509c1/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -419,13 +432,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/03/20160503c1/" title="上一篇: JavaScript基础知识点总结">
+            <a href="/2016/05/09/20160509c2/" title="上一篇: 20160509c2">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/04/20/20160420c/" title="下一篇: Cocos在Win32平台调试时 无法播放.ogg格式的音乐的解决办法">
+            <a href="/2016/05/03/20160503c1/" title="下一篇: JavaScript基础知识点总结">
                 <i class="fa fa-angle-right"></i>
             </a>
         
